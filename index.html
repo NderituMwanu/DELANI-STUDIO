@@ -10,21 +10,18 @@
     <title>DELANI STUDIO</title>
 </head>
 <body>
-
     <div class="homeimage">
         
         <br><br><br>
         <img id="logo" src="IMAGES/logo/logo.png">
-        <h1>
-        WELCOME TO DELANI<br>STUDIO
-        
-        </h1>
+            <h1>
+                 WELCOME TO DELANI<br>STUDIO
+            </h1>
         <h5>
         AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT
         </h5>
         <img id="mouse" src="IMAGES/mouse_click.png" height="50px">
     </div>
-
     <div class="aboutustext">
         <p>
             <h3>ABOUT US</h3>
@@ -63,7 +60,6 @@
                     what gets built is what is needed.<br>
                 </p>
             </div>
-
             <div class="column">
                 <img id="development" src="IMAGES/services_icons/dev_icon.png">
                 <p><b>DEVELOPMENT</b></p>
@@ -76,7 +72,6 @@
                     test-driven development and pair programming.
                 </p>
             </div>
-
             <div class="column">
                 <img id ="product_management" src="IMAGES/services_icons/product_icon.png">
                 <p><b>PRODUCT MANAGEMENT</b></p>
@@ -92,76 +87,67 @@
             <div class="text">   
             </div>
             <div class="container-fluid">
-                    
-                    <div class="objects">
+                <div class="objects">
                         <img src="IMAGES/portfolio/work4.jpg" width="99%">
-                    
-                    </div>
-                    
-                    <div class="objects">
-                        <img src="IMAGES/portfolio/work3.jpg" width="99%" height="99%">
-                    </div>
+                     </div>
+                        <div class="objects">
+                            <img src="IMAGES/portfolio/work3.jpg" width="99%" height="99%">
+                        </div>
 
-                    <div class="objects">
-                        <img src="IMAGES/portfolio/work2.jpg" width="99%">
+                        <div class="objects">
+                            <img src="IMAGES/portfolio/work2.jpg" width="99%">
+                        </div>
+                        <div class="objects">
+                            <img src="IMAGES/portfolio/work1.jpg" width="99%">
+                        </div>
                     </div>
-                    <div class="objects">
-                        <img src="IMAGES/portfolio/work1.jpg" width="99%">
-                    </div>
-                </div>
-
             <div class="container-fluid">
                     <div class="objects">
                         <img src="IMAGES/portfolio/work5.jpg" width="99%">
                     </div>
-                        
-                    <div class="objects">
-                        <img src="IMAGES/portfolio/work6.jpg" width="99%">
-                    </div>
-
-                    <div class="objects">
-                        <img src="IMAGES/portfolio/work7.jpg" width="99%">
-                    </div>
-                    <div class="objects">
-                        <img src="IMAGES/portfolio/work8.jpg" width="99%">
-                    </div>
+                        <div class="objects">
+                            <img src="IMAGES/portfolio/work6.jpg" width="99%">
+                        </div>
+                        <div class="objects">
+                            <img src="IMAGES/portfolio/work7.jpg" width="99%">
+                        </div>
+                        <div class="objects">
+                            <img src="IMAGES/portfolio/work8.jpg" width="99%">
+                        </div>
             </div>
        </div>     
-
        <script>
            $(document).ready(function(){
                $(function).hover(function(){
                    $(this).show()
                })
            })
-       </script>
-    <div class="header">
-    <div class="contactus">
+        </script>
+        <div class="header">
+        <div class="contactus">
         CONTACT US
     </div>
         <form action="POST">
             <input type="text" id ="name" placeholder="Name" size=75>
-
             <input type="text" id="email" placeholder="Email" size=75><br>
 
-            <center><input type="text" id="message" placeholder="Your Message Here" size=150 ></center><br><br>
+            <center>
+                <input type="text" id="message" placeholder="Your Message Here" size=150 >
+            </center>
+            <br><br>
             <center><input type="submit" value="SUBMIT" id="submit"></center>
-
             <script>
-                $("#submit").click(function(){
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var info = $("#message").val();
-        $("#name").text(name);
-        $("#email").text(email);
-        $("#message").text(message);
-        alert("Thanks " + name + " for your feedback.");
-
-            </script>
-             
+                        $("#submit").click(function(){
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var info = $("#message").val();
+                $("#name").text(name);
+                $("#email").text(email);
+                $("#message").text(message);
+                alert("Thanks " + name + " for your feedback.");
+            </script> 
         </form>
     </div>
-
     <footer>
         <div class="socialmedia">
             <img src="IMAGES/social_icons/twitter.png">
@@ -172,31 +158,30 @@
             <img src="IMAGES/social_icons/behance.png">
             <img src="IMAGES/social_icons/pinterest.png">
             <img src="IMAGES/social_icons/flickr.png">
-            
         </div>
-    </footer>
-    <div class="delanistudio">
-        DELANI STUDIO <br>2019
-    </div>  
-    <script>
-    $(document).ready(function(){
-        $('#product_management').click(function(){
-            $('#text1').toggle();
-        });
-    }); 
+        </footer>
+        <div class="delanistudio">
+            DELANI STUDIO <br>2019
+        </div>  
+        <script>
+        $(document).ready(function(){
+            $('#product_management').click(function(){
+                $('#text1').toggle();
+            });
+        }); 
 
-    $(document).ready(function(){
-        $('#development').click(function(){
-            $('#text2').toggle();
+        $(document).ready(function(){
+            $('#development').click(function(){
+                $('#text2').toggle();
+            });
         });
-    });
 
-    $(document).ready(function(){
-        $('#design').click(function(){
-            $('#text3').toggle();
+        $(document).ready(function(){
+            $('#design').click(function(){
+                $('#text3').toggle();
+            });
         });
-    });
-    </script>
+        </script>
 
     
 </body>
