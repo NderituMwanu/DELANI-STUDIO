@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
     <link href="bootstrap.css">
-    <link href="js/scripts.js">
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DELANI STUDIO</title>
 </head>
 <body>
-    <div class="home">
-        <img src="IMAGES/logo/logo.png">
-        <p>
-            <center>
-                <h2>WELCOME TO DELANI<br>STUDIO</h2>
-            </center>
-        </p>
-        <img src="IMAGES/mouse_click.png">
+
+    <div class="homeimage">
         
+        <br><br><br>
+        <img id="logo" src="IMAGES/logo/logo.png">
+        <h1>
+        WELCOME TO DELANI<br>STUDIO
+        
+        </h1>
+        <h5>
+        AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT
+        </h5>
+        <img id="mouse" src="IMAGES/mouse_click.png" height="50px">
     </div>
 
     <div class="aboutustext">
@@ -30,63 +35,169 @@
                 Then we help translate them into effective and elegant solutions.
         </p>
     </div>
+
     <div class="services">
-        <h2>SERVICES</h2>
-        <p>
+        <h3>SERVICES</h3>
+        
             Before we sign a contract or write a line of code, our team will 
             spend the necessary time needed to understand your product vision.<br>
             The outcome of this scoping session is proposal or high level statement 
             of work.<br> Based on your requirements we can provide a complete offering
             or just the pieces you need.<br>
-        </p>
+        
     </div>
     
-    <p><center>WHAT WE DO</center></p>
+    <h4>WHAT WE DO</h4>
 
-    <div class = "row">
-        <div class="column">
-            <img src="IMAGES/services_icons/design_icon.png">
-            <h3>DESIGN</h3>
-            <p>
-                Our design Practice offers a full range of<br>
-                services including brand strategy, interaction and
-                visual design and user experience testing.<br>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <img id ="design"src="IMAGES/services_icons/design_icon.png">
+                <p><b>DESIGN</b></p>
+                <p id="text3">
+                    Our design practice offers a full range of services
+                    including brand strategy,<br> interaction and visual design
+                    and user experience testing.<br>
+                    Throughout your project, our designers create and implement<br>
+                    visual design and workflows,<br> solicit user feedback and work with you to make sure<br>
+                    what gets built is what is needed.<br>
+                </p>
+            </div>
 
-                Throughout your project, our designers create and implement<br>
-                visual design and workflows,<br> solicit user feedback,<br>and work with you to make sure what gets built 
-                is what is needed.<br>
-            </p>
+            <div class="column">
+                <img id="development" src="IMAGES/services_icons/dev_icon.png">
+                <p><b>DEVELOPMENT</b></p>
+                <p id="text2">
+                    All engineers are fluent in the latest enterprise, mobile
+                    and web development technologies.
+                    They collaborate with your team to write, 
+                    and improve code on a daily 
+                    basis, using proven practices such as
+                    test-driven development and pair programming.
+                </p>
+            </div>
+
+            <div class="column">
+                <img id ="product_management" src="IMAGES/services_icons/product_icon.png">
+                <p><b>PRODUCT MANAGEMENT</b></p>
+                <p id ="text1">
+                    Planning and development is iterative. Because we are constantly
+                    coding and testing, the products we build are always ready to go live<br>
+                    This iterative process allows for changes as business requirements evolve.
+                </p>
+            </div>
+            <div class="portfolio">
+                PORTFOLIO
+            </div>
+            <div class="text">   
+            </div>
+            <div class="container-fluid">
+                    
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work4.jpg" width="99%">
+                    
+                    </div>
+                    
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work3.jpg" width="99%" height="99%">
+                    </div>
+
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work2.jpg" width="99%">
+                    </div>
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work1.jpg" width="99%">
+                    </div>
+                </div>
+
+            <div class="container-fluid">
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work5.jpg" width="99%">
+                    </div>
+                        
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work6.jpg" width="99%">
+                    </div>
+
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work7.jpg" width="99%">
+                    </div>
+                    <div class="objects">
+                        <img src="IMAGES/portfolio/work8.jpg" width="99%">
+                    </div>
+            </div>
+       </div>     
+
+       <script>
+           $(document).ready(function(){
+               $(function).hover(function(){
+                   $(this).show()
+               })
+           })
+       </script>
+    <div class="header">
+    <div class="contactus">
+        CONTACT US
     </div>
-    <div class ="row">
-    <div class="column">
-        <img src="IMAGES/services_icons/dev_icon.png">
-        <h3>DEVELOPMENT</h3>
-        <p>
-            All engineers are fluent in <br>the latest enterprise, mobile 
-            and web development technologies.<br>
-            They collaorate with ypur team to write, and improve<br>
-            code on a daily basis,<br> using proven practices such as<br>
-            test-driven development and pair programming.<br>
-        </p>
-    </div>
+        <form action="POST">
+            <input type="text" id ="name" placeholder="Name" size=75>
+
+            <input type="text" id="email" placeholder="Email" size=75><br>
+
+            <center><input type="text" id="message" placeholder="Your Message Here" size=150 ></center><br><br>
+            <center><input type="submit" value="SUBMIT" id="submit"></center>
+
+            <script>
+                $("#submit").click(function(){
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var info = $("#message").val();
+        $("#name").text(name);
+        $("#email").text(email);
+        $("#message").text(message);
+        alert("Thanks " + name + " for your feedback.");
+
+            </script>
+             
+        </form>
     </div>
 
-    <div class="column">
-        <img src="IMAGES/services_icons/product_icon.png">
-        <h3>PRODUCT MANAGEMENT</h3>
-        <p>
-            Planning and development is iterative.<br> Because we 
-            are constantly coding and testing,<br>the products we build are always ready to go live.
-            This iterative process allows <br>for changes as businessrequirements evolve.<br>
-        </p>
-    </div>
+    <footer>
+        <div class="socialmedia">
+            <img src="IMAGES/social_icons/twitter.png">
+            <img src="IMAGES/social_icons/dribble.png">
+            <img src="IMAGES/social_icons/facebook.png">
+            <img src="IMAGES/social_icons/g_plus.png">
+            <img src="IMAGES/social_icons/skype.png">
+            <img src="IMAGES/social_icons/behance.png">
+            <img src="IMAGES/social_icons/pinterest.png">
+            <img src="IMAGES/social_icons/flickr.png">
+            
+        </div>
+    </footer>
+    <div class="delanistudio">
+        DELANI STUDIO <br>2019
+    </div>  
+    <script>
+    $(document).ready(function(){
+        $('#product_management').click(function(){
+            $('#text1').toggle();
+        });
+    }); 
 
-    <h2><center>PORTFOLIO</center></h2>
+    $(document).ready(function(){
+        $('#development').click(function(){
+            $('#text2').toggle();
+        });
+    });
 
-    <div class="row">
-        <div class="column">
-            <img src=""
+    $(document).ready(function(){
+        $('#design').click(function(){
+            $('#text3').toggle();
+        });
+    });
+    </script>
 
-    </div>
+    
 </body>
 </html>
